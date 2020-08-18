@@ -12,6 +12,7 @@ The webpage is to be hosted on a local server (the choice made to allow extracti
 ```python -m http.server```.
 The page should now be available at ```localhost:8000```
 
+![Final Image](image.png)
 
 
 
