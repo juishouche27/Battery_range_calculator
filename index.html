@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sendcloud Take-home test</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h3>
+    Battery Range Calculator
+  </h3>
+    <div class="parent" >
+        <img class="car"  src="images/tesla@1X%20(1).png"> 
+        <!--Front Wheel-->
+        <div class="wheel-front">
+            <img src="images/wheel-19@1X.png" class="rotate-70-19" style="width:65px;
+                height: 65px" id='rotate-front'/>
+        </div>
+        
+        <!--Back Wheel-->
+        <div class="wheel-back">
+            <img src="images/wheel-19@1X.png" class="rotate-70-19" style="width:65px;
+                height: 65px" id='rotate-back'/>
+        </div>  
+    </div>
+        
+    <div class="model">
+       <div class="car1">
+           <div class="car1-number"></div>
+           <div id="car1-result"><!--PUT THE VALUE HERE!--></div>
+        </div>
+        <div class="car2">
+            <div class="car2-number"></div>
+            <div id="car2-result">
+           </div>
+     </div>
+    </div> 
+        
+
+    <!--Panels-->
+    <div class="panels">
+        <!--Speed-->
+        <div class="panel-container">
+            <div class="panel-name">Speed</div>
+            <div class="panel-wrapper" tabindex="-1">
+                <div class="panel-value">
+                    <input id="speed" readonly>
+                    <span class="metric">KMH</span></div>
+                <div id='incDec-speed'>
+                <div class="button button-up" onclick="stepIncrease(this,'speed')"></div>
+                <div class="seperator"></div>
+                <div class="button button-down" onclick="stepDecrease(this,'speed')"></div>
+            </div>
+            </div>
+        </div>
+
+        <!--Outside Temp-->
+        <div class="outside-temp">
+        <div class="panel-container">
+            <div class="panel-name">Outside Temperature</div>
+            <div class="panel-wrapper" tabindex="-1" >
+                <div class="panel-value"><!--JS text-->
+                    <input id="temp" readonly>
+                    <span class="metric">°</span></div>
+                    <!--Div for increase and decrease buttons for temperature-->
+                    <div id='incDec-temp'>
+                    <div class="button button-up" onclick="stepIncrease(this,'temp')"></div>
+                    <div class="seperator"></div>
+                    <div class="button button-down" onclick="stepDecrease(this,'temp')"></div>
+                </div>
+             </div>
+            </div>
+        <!--AC wrapper class-->
+        <div class="ac-heat-wrapper">
+            <div tabindex="1" class="button ac-on" onclick="changeAc(this)" id='ac-heat'</div>
+            <div class="seperator"></div>
+      </div>
+    </div>
+    </div>
+
+     <!--Wheels-->
+     <div class="wheels-container">
+     <div class="wheels-wrapper" id="wrap">
+         <div class="wheels-component-name">Wheels</div>
+            <div tabindex="0" id="both-wheels">
+            <!--Wrapper for wheel 19""-->
+             <div tabindex="0" class="wheel-wrapper-19 selected" onclick="wheelSelect(this)">
+                 <div class="wheel-icon wheel-19" ></div>
+                 <div class="wheel-size" id=wheel19></div>
+             </div>
+
+            <!--Wrapper for wheel 21"-->
+            <div tabindex="0" class="wheel-wrapper-21" onclick="wheelSelect(this)" >
+                <div class="wheel-icon wheel-21" ></div>
+                <div class="wheel-size" id="wheel21"> </div>
+            </div>
+            </div> <!--End of both-wheels container-->
+     </div>
+    </div>
+    </div>
+    
+    <div id="description">
+        <img src="images/description.png">
+    </div>
+                
+<!--JavaScript file-->
+<script src="components.js"></script>
+                
+            
+</body>
+    
+</html>
