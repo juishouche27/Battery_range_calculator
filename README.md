@@ -1,5 +1,5 @@
 # Battery range calculator
-The repository consists of the code for the 'take home test junior'. Following are the descriptions of the files:
+Following are the descriptions of the files:
 - style.css : The css file containing the required format of the given elements
 - components.js : The javascript containing the functions evoked upon clicking buttons and other elements, and corresponding changes to the results (and others if applicable)
 - index.html : The HTML file contaning all the required elements. The components are nested. 
